@@ -32,6 +32,7 @@ ul {
 .container {
     width: 1110px;
     margin: 0 auto;
+    max-width: calc(100% - 48px);
 }
 
 .btn {
@@ -202,8 +203,8 @@ nav.nav {
 }
 
 .review-star {
-    width: 116px;
-    height: 18.85px;
+    width: 123px;
+    height: 19px;
     color: #FFCA56;
 }
 
@@ -223,7 +224,6 @@ nav.nav {
 } 
 
 .content-logo a {
-    padding: 23px 0;
     height: 90px;
     border-radius: 12px;
     align-items: center;
@@ -271,12 +271,13 @@ nav.nav {
     transform: translateX(50%);
 }
 
-p.guide-desc {
+.guide-desc {
     color: var(--text-color);
     text-align: center;
     font-size: 1.6rem;
     line-height: 30px;
-    margin-top: 20px;
+    width: 459px;
+    margin: 20px auto 0;
 }
 
 .guide-container {
