@@ -108,7 +108,7 @@ nav.nav {
 .action-link {
     margin-right: 16px;
     font-weight: 500;
-    color: #0F1B4C;
+    color: var(--primary-color);
 }
 
 .action-btn {
@@ -161,9 +161,6 @@ nav.nav {
 }
 
 /* Content layout */
-.content {
-    
-}
 
 .clients {
     margin-top: 79px;
@@ -182,10 +179,6 @@ nav.nav {
 
 .clients-header {
     line-height: 1px;
-}
-
-.clients-logo {
-
 }
 
 .clients-desc {
@@ -315,7 +308,7 @@ nav.nav {
 }
 
 .btn-active {
-    color: #FFF;
+    color: var(--white-color);
     text-align: center;
     font-size: 1.3rem;
     font-weight: 500;
@@ -517,7 +510,7 @@ nav.nav {
     width: 16px;
     height: 16px;
     background: var(--bg-color);
-    color: #fff;
+    color: var(--white-color);
     text-align: center;
     line-height: 16px;
     border-radius: 50%;
@@ -555,7 +548,7 @@ nav.nav {
 }
 
 .featured-02-text-desc {
-    color: #5A6473;
+    color: var(--text-color);
     line-height: 30px;
     margin-top: 20px;
     width: 309px;
@@ -608,7 +601,7 @@ nav.nav {
     font-weight: 600;
     font-size: 3.5rem;
     line-height: 1.5;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .subscription-info p {
@@ -616,14 +609,14 @@ nav.nav {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
-    color: #ffffff;
+    color: var(--white-color);
     opacity: 0.75;
 }
 
 .subscription-btn {
     margin-top: 20px;
     min-width: 151px;
-    background: #fff;
+    background: var(--white-color);
     color: #002366;
 }
 
