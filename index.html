@@ -33,19 +33,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
     <!-- Style -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
 </head>
 
 <body>
-    <!-- Navigation -->
-    <div class="fixed-header">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
             <nav class="nav">
+                <!-- Bars -->
+                <label for="mobile-tablet-checkbox" class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 <!-- Logo -->
-                <a href="#" class="nav-logo"><img src="./assets/image/Logo.svg" alt=""></a>
+                <a href="#" class="nav-logo">
+                    <img src="./assets/image/Logo.svg" alt="">
+                </a>
                 <!-- Menu -->
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -71,12 +79,48 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- Header layout -->
-    <header class="header">
-        <div class="container">
-            <div class="hero">
+    <!-- Mobile/Tablet header -->
+    <header class="mobile-tablet-header">
+        <input class="mobile-tablet-input" hidden id="mobile-tablet-checkbox" type="checkbox">
+        <!-- Overlay -->
+        <label for="mobile-tablet-checkbox" class="menu-overlay"></label>
+        <div class="menu-drawer">
+            <a href="#" class="nav-logo-mobile">
+                <img src="./assets/image/Logo.svg" alt="">
+            </a>
+            <ul class="nav-list-mobile">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resources">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item item-mobile remove-tablet">
+                    <a class="nav-link" href="#!">Sign in</a>
+                </li>
+                <li class="nav-item remove-tablet">
+                    <a class="nav-link" href="#!">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero layout -->
+        <div class="hero">
+            <div class="container">
                 <div class="info">
                     <p class="hero-subtitle">Welcome to Besnik Agency</p>
                     <h1 class="hero-title">Discover a place you'll love to live.</h1>
@@ -84,11 +128,11 @@
                         FORECLOSURE DEALS with one simple search.</p>
                     <a href="#!" class="hero-action btn">More About Us</a>
                 </div>
-                <img src="./assets/image/header-1.svg" alt="Discover a place you'll love to live." class="hero-img">
+                <img src="./assets/image/header-1.svg" alt="Discover a place you'll love to live."
+                    class="hero-img remove-mobile-tablet">
             </div>
         </div>
-    </header>
-    <main class="main">
+        </div>
         <!-- Content layout -->
         <div class="content">
             <!-- Clients -->
@@ -107,27 +151,25 @@
                                 <img src="./assets/image/star.svg" alt="star">
                                 <img src="./assets/image/star.svg" alt="star">
                             </div>
-                            <p class="review-desc">5 Star Ratings (2k+ Review)</p>
+                            <p class="review-desc remove-mobile">5 Star Ratings (2k+ Review)</p>
                         </div>
                     </div>
-                    <div class="gird">
-                        <div class="row no-gutters content-logo">
-                            <a href="#!" class="col l-2-4">
-                                <img src="./assets/image/clients-1.jpg" alt="MeUndies">
-                            </a>
-                            <a href="#!" class="col l-2-4">
-                                <img src="./assets/image/clients-2.svg" alt="slack">
-                            </a>
-                            <a href="#!" class="col l-2-4">
-                                <img src="./assets/image/clients-3.svg" alt="amazon">
-                            </a>
-                            <a href="#!" class="col l-2-4">
-                                <img src="./assets/image/clients-4.svg" alt="COMMERCE">
-                            </a>
-                            <a href="#!" class="col l-2-4">
-                                <img src="./assets/image/clients-5.png" alt="sitepoint">
-                            </a>
-                        </div>
+                    <div class="content-logo">
+                        <a href="#!" class="">
+                            <img src="./assets/image/clients-1.jpg" alt="MeUndies">
+                        </a>
+                        <a href="#!" class="">
+                            <img src="./assets/image/clients-2.svg" alt="slack">
+                        </a>
+                        <a href="#!" class="">
+                            <img src="./assets/image/clients-3.svg" alt="amazon">
+                        </a>
+                        <a href="#!" class="">
+                            <img src="./assets/image/clients-4.svg" alt="COMMERCE">
+                        </a>
+                        <a href="#!" class="">
+                            <img src="./assets/image/clients-5.png" alt="sitepoint">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -140,30 +182,32 @@
                             all in one place.</p>
                     </div>
                     <div class="guide-body">
-                        <div class="guide-container">
-                            <div class="guide-cart">
-                                <img src="./assets/image/guide-1.svg" alt="Buyer Guides">
-                                <h3>Buyer Guides</h3>
-                                <span href="#!">
-                                    How to buy
-                                    <img src="./assets/image/arrow.svg" alt="">
-                                </span>
-                            </div>
-                            <div class="guide-cart">
-                                <img src="./assets/image/guide-2.svg" alt="Renter Guides">
-                                <h3>Renter Guides</h3>
-                                <span href="#!">
-                                    How to buy
-                                    <img src="./assets/image/arrow.svg" alt="">
-                                </span>
-                            </div>
-                            <div class="guide-cart">
-                                <img src="./assets/image/guide-3.svg" alt="Seller Guides">
-                                <h3>Seller Guides</h3>
-                                <span href="#!">
-                                    How to buy
-                                    <img src="./assets/image/arrow.svg" alt="">
-                                </span>
+                        <div class="grid">
+                            <div class="row guide-container">
+                                <div class="col l-4 m-4 c-12 guide-cart">
+                                    <img src="./assets/image/guide-1.svg" alt="Buyer Guides">
+                                    <h3>Buyer Guides</h3>
+                                    <span href="#!">
+                                        How to buy
+                                        <img src="./assets/image/arrow.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="col l-4 m-4 c-12 guide-cart">
+                                    <img src="./assets/image/guide-2.svg" alt="Renter Guides">
+                                    <h3>Renter Guides</h3>
+                                    <span href="#!">
+                                        How to buy
+                                        <img src="./assets/image/arrow.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="col l-4 m-4 c-12 guide-cart">
+                                    <img src="./assets/image/guide-3.svg" alt="Seller Guides">
+                                    <h3>Seller Guides</h3>
+                                    <span href="#!">
+                                        How to buy
+                                        <img src="./assets/image/arrow.svg" alt="">
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="btn-container">
@@ -180,14 +224,14 @@
                             <h2 class="feature-01-heading">Featured Properties</h2>
                             <p class="feature-01-desc">Everything you need to know when you're looking</p>
                         </div>
-                        <span href="#!">
+                        <span class="remove-mobile" href="#!">
                             View All Properties
                             <img src="./assets/image/arrow.svg" alt="">
                         </span>
                     </div>
                     <div class="feature-01-body grid">
                         <div class="row feature-01-row">
-                            <div class="col l-4 feature-01-col">
+                            <div class="col l-4 m-6 c-12 feature-01-col">
                                 <img class="feature-01-img" src="./assets/image/feature-1.jpg" alt="Nikko Apartments">
                                 <div class="feature-01-barrel">
                                     <a href="#!">Nikko Apartments</a>
@@ -208,7 +252,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 feature-01-col">
+                            <div class="col l-4 m-6 c-12 feature-01-col">
                                 <img class="feature-01-img" src="./assets/image/feature-2.jpg" alt="CouCou Homestead">
                                 <div class="feature-01-barrel">
                                     <a href="#!">CouCou Homestead</a>
@@ -229,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-4 feature-01-col">
+                            <div class="col l-4 m-6 c-12 feature-01-col">
                                 <img class="feature-01-img" src="./assets/image/feature-3.jpg" alt="Lavis 18 Residence">
                                 <div class="feature-01-barrel">
                                     <a href="#!">Lavis 18 Residence</a>
@@ -258,59 +302,57 @@
             <div id="resources" class="featured-02">
                 <div class="container">
                     <!-- featured-02-head -->
-                    <div class="grid">
-                        <div class="row no-gutters featured-02-head">
-                            <div class="col l-6 featured-02-cart">
-                                <img src="./assets/image/stats-img (1).jpg" alt="">
-                                <div class="cart-head">
-                                    <div class="cart-heading">
-                                        <strong>40,000+</strong>
-                                        <img src="./assets/image/feature-02-1.svg" alt="">
+                    <div class="featured-02-head">
+                        <div class="featured-02-cart">
+                            <img src="./assets/image/stats-img (1).jpg" alt="">
+                            <div class="cart-head">
+                                <div class="cart-heading">
+                                    <strong>40,000+</strong>
+                                    <img src="./assets/image/feature-02-1.svg" alt="">
+                                </div>
+                                <p>By avarage for 2 bedroom apments in San Francisco, CA</p>
+                                <div class="avatar">
+                                    <div class="avatar-group">
+                                        <img src="./assets/image/avatar-1.jpg" alt="">
+                                        <img src="./assets/image/avatar-2.jpg" alt="">
                                     </div>
-                                    <p>By avarage for 2 bedroom apments in San Francisco, CA</p>
-                                    <div class="avatar">
-                                        <div class="avatar-group">
-                                            <img src="./assets/image/avatar-1.jpg" alt="">
-                                            <img src="./assets/image/avatar-2.jpg" alt="">
-                                        </div>
-                                        <div class="avatar-group">
-                                            <img src="./assets/image/avatar-3.jpg" alt="">
-                                            <img src="./assets/image/avatar-4.webp" alt="">
-                                            <img src="./assets/image/avatar-5.jpg" alt="">
-                                            <div style="--bg-color: #1f3bb1" class="avatar-r">R</div>
-                                        </div>
-                                        <div class="avatar-group">
-                                            <div style="--bg-color: #24d6d9" class="avatar-r">FJ</div>
-                                            <img src="./assets/image/avatar-6.jpg" alt="">
-                                            <div style="--bg-color: #f8c120" class="avatar-r">S</div>
-                                        </div>
-                                        <div class="avatar-group">
-                                            <img src="./assets/image/avatar-7.jpeg" alt="">
-                                            <img src="./assets/image/avatar-8.jpg" alt="">
-                                            <img src="./assets/image/avatar-9.jpg" alt="">
-                                            <div style="--bg-color: #f97f6b" class="avatar-r">JJ</div>
-                                        </div>
-                                        <div class="avatar-group">
-                                            <img src="./assets/image/avatar-10.jpg" alt="">
-                                            <div style="--bg-color: #73a242" class="avatar-r">QV</div>
-                                        </div>
-                                        <div class="avatar-group">
-                                            <img src="./assets/image/avatar-11.jpg" alt="">
-                                            <img src="./assets/image/avatar-12.jpg" alt="">
-                                        </div>
-                                        <div class="avatar-group">
-                                            <img src="./assets/image/avatar-13.jfif" alt="">
-                                            <div style="--bg-color: #1f3bb0" class="avatar-r">UI</div>
-                                        </div>
+                                    <div class="avatar-group">
+                                        <img src="./assets/image/avatar-3.jpg" alt="">
+                                        <img src="./assets/image/avatar-4.webp" alt="">
+                                        <img src="./assets/image/avatar-5.jpg" alt="">
+                                        <div style="--bg-color: #1f3bb1" class="avatar-r">R</div>
+                                    </div>
+                                    <div class="avatar-group">
+                                        <div style="--bg-color: #24d6d9" class="avatar-r">FJ</div>
+                                        <img src="./assets/image/avatar-6.jpg" alt="">
+                                        <div style="--bg-color: #f8c120" class="avatar-r">S</div>
+                                    </div>
+                                    <div class="avatar-group">
+                                        <img src="./assets/image/avatar-7.jpeg" alt="">
+                                        <img src="./assets/image/avatar-8.jpg" alt="">
+                                        <img src="./assets/image/avatar-9.jpg" alt="">
+                                        <div style="--bg-color: #f97f6b" class="avatar-r">JJ</div>
+                                    </div>
+                                    <div class="avatar-group">
+                                        <img src="./assets/image/avatar-10.jpg" alt="">
+                                        <div style="--bg-color: #73a242" class="avatar-r">QV</div>
+                                    </div>
+                                    <div class="avatar-group">
+                                        <img src="./assets/image/avatar-11.jpg" alt="">
+                                        <img src="./assets/image/avatar-12.jpg" alt="">
+                                    </div>
+                                    <div class="avatar-group">
+                                        <img src="./assets/image/avatar-13.jfif" alt="">
+                                        <div style="--bg-color: #1f3bb0" class="avatar-r">UI</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col l-6 featured-02-text">
-                                <h2 class="featured-02-heading">You’ve found a neighborhood you love. </h2>
-                                <p class="featured-02-text-desc">When you own a home, you’re committing to living in
-                                    onelocation for a while. In a recent Trulia survey, we found that five out of six
-                                    respondents said finding the right neighborhood </p>
-                            </div>
+                        </div>
+                        <div class="featured-02-text">
+                            <h2 class="featured-02-heading">You’ve found a neighborhood you love. </h2>
+                            <p class="featured-02-text-desc">When you own a home, you’re committing to living in
+                                onelocation for a while. In a recent Trulia survey, we found that five out of six
+                                respondents said finding the right neighborhood </p>
                         </div>
                     </div>
                     <!-- featured-02-body -->
@@ -346,12 +388,13 @@
             </div>
         </div>
     </main>
-    <!-- footer layout -->
+
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="grid">
                 <div class="row row-top">
-                    <div class="col l-3">
+                    <div class="col l-3 m-6 c-12">
                         <h3 class="footer-heading">Product</h3>
                         <ul class="footer-list">
                             <li class="footer-item"><a href="">Listing</a></li>
@@ -360,7 +403,7 @@
                             <li class="footer-item"><a href="">Blog</a></li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-6 c-12">
                         <h3 class="footer-heading">Resources</h3>
                         <ul class="footer-list">
                             <li class="footer-item"><a href="">Our Homes</a></li>
@@ -369,7 +412,7 @@
                             <li class="footer-item"><a href="">Free trial</a></li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-6 c-12">
                         <h3 class="footer-heading">Product</h3>
                         <ul class="footer-list">
                             <li class="footer-item"><a href="">Patnerships</a></li>
@@ -378,7 +421,7 @@
                             <li class="footer-item"><a href="">Sitemap</a></li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-6 c-12">
                         <h3 class="footer-heading">Get in touch</h3>
                         <p class="desc">You’ll find your next home, in any style you prefer.</p>
                         <div class="footer-icons">
