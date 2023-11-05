@@ -735,15 +735,12 @@ footer.footer {
 .row-bottom {
     margin-top: 81px;
     display: flex;
-    justify-content: space-between;
-    width: 1110px;
-    margin: 0 auto;
-    padding-top: 81px;
 }
 
 .row-bottom p {
     font-size: 1.4rem;
     color: #c2c2c2;
+    margin-left: auto;
 }
 
 

@@ -56,10 +56,10 @@
     .row.row-top {
         row-gap: 80px;
     }
-    .content-logo,
-    .content-logo a {
+    .content-logo {
         flex-wrap: wrap;
         justify-content: center;
+        row-gap: 20px;
     }
 }
 
