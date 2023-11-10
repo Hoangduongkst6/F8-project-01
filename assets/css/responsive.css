@@ -122,4 +122,12 @@
         font-size: 1.5rem;
     }
 
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero-desc {
+        font: 1.4rem;
+    }
+
 }
