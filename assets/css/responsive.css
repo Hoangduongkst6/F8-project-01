@@ -130,4 +130,8 @@
         font: 1.4rem;
     }
 
+    .subscription-info {
+        text-align: center;
+    }
+
 }
