@@ -131,7 +131,15 @@
     }
 
     .subscription-info {
-        text-align: center;
+        padding: 32px;
+    }
+
+    .row-bottom {
+        flex-direction: column;
+    }
+
+    .row-bottom p {
+        margin: 24px 0 0;
     }
 
 }
